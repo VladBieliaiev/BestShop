@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+
+
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------HEADER NAV---------*/
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+}
+
+.header {
+    box-shadow:0 3px 5px lightgrey;
+}
+
+.nav__link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: var(--color-grey);
+}
+
+.nav__link:hover{
+    color: var(--color-black);
+    /*border-bottom: 5px solid#00b3ff;*/
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__section {
+    box-sizing: border-box;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 90px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    color: var(--color-primary)
+}
+
+
+/*--------HEADER NAV---------*/
+
+
+/*-------HEADER MAIN---------*/
+.main {
+    width: 100%;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 49px;
+
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: var(--color-black);
+}
+
+.main__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+
+    margin-bottom: 38px;
+}
+
+.main__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--color-white);
+
+    background: var(--color-primary);
+    width: 440px;
+    height: 67px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.main__img {
+    position: center;
+    width: 100%;
+}
+
+
+/*-------HEADER MAIN---------*/
+
+
+
+
+/*-----SECTION STATISTICS-----*/
+
+
+.statisctics__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.statistics__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: var(--color-black);
+
+    margin: 100px 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+.statistics__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.statistics__numb {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--color-black);
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.statistics__text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: var(--color-grey);
+
+
+
+}
+
+.statistics__image__one,
+.statistics__image__two,
+.statistics__image__three {
+    position: absolute;
+}
+
+.statistics__image__one {
+    width:44px;
+    height: 52px;
+    left: 30px;
+}
+
+.statistics__image__two {
+    width: 65px;
+    height: 37px;
+
+    bottom: 10px;
+    left: 20px;
+}
+
+.statistics__image__three {
+    width: 52px;
+    height: 48px;
+
+    bottom: 5px;
+    left: 30px;
+}
+
+
+.statistics__circle__one,
+.statistics__circle__two,
+.statistics__circle__three {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.statistics__circle__one {
+    background: var(--color-redish);
+
+}
+
+.statistics__circle__two {
+    background: var(--color-primary);
+}
+
+.statistics__circle__three {
+    background: var(--color-green);
+}
+
+
+/*-----SECTION STATISTICS-----*/
+
+
+
+/*-----SECTION BENEFITS-------*/
+
+.benefits {
+    width: 100%;
+    height: 1300px;
+    background: var(--color-light-grey) ;
+    padding-top: 100px;
+}
+
+/*.block__one {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    background: var(--color-white);*/
+/*    margin-bottom: 37px;*/
+/*}*/
+
+/*.block__one__img {*/
+/*    width: 387px;*/
+/*    height: 212px;*/
+/*}*/
+
+
+/*.block__one__content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    width: 415px;*/
+/*    height: 118px;*/
+
+/*    margin: 91px 35px 120px;*/
+/*}*/
+
+/*.block__one__title {*/
+/*    font-family: 'Raleway', sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 36px;*/
+/*    color: var(--color-black);*/
+
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.block__one__text {*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    font-weight: 400;*/
+/*    line-height: 22px;*/
+/*}*/
+
+/*.block__one__text::after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 300px;*/
+/*    height: 4px;*/
+/*    background: var(--color-redish);*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/*.block__one__img__wrapper {*/
+/*    margin-right: 117px;*/
+/*    margin-top: 100px;*/
+
+/*}*/
+
+/*.block__one__img__square {*/
+
+/*}*/
+
+
+.benefits__container {
+    max-width: 1150px;
+}
+
+.block__one,
+.block__two {
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--color-white);
+    border-radius: 4px;
+    border: 1px solid #E8E9ED;
+
+    margin-bottom: 37px;
+}
+
+
+
+.block__one__title,
+.block__two__title,
+.block__three__title {
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.block__one__text,
+.block__two__text,
+.block__three__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.block__one__content {
+    margin: 91px 31px;
+
+    box-sizing: content-box;
+    max-width: 415px;
+}
+
+.block__two__content {
+    margin: 70px 20px;
+
+    box-sizing: content-box;
+    max-width: 415px;
+}
+
+.block__one__text::after {
+    content: "";
+    width: 300px;
+    height: 4px;
+    background: var(--color-redish);
+    display: block;
+    margin-top: 40px;
+}
+
+.block__two__text::after {
+    content: "";
+    width: 300px;
+    height: 4px;
+    background: var(--color-primary);
+    display: block;
+    margin-top: 40px;
+}
+
+.block__one__img__wrapper {
+    box-sizing: content-box;
+    display: block;
+    margin-top: 113px;
+    padding-right: 118px;
+    margin-bottom: 38px;
+    /*position: relative;*/
+
+}
+
+.block__one__img {
+    display: block;
+    width: 386px;
+    height: 220px;
+    position: relative;
+}
+
+
+
+.block__two__img {
+    width: 426px;
+    height: 328px;
+    margin: 29px 0 13px 70px;
+}
+
+
+/*-----SECTION BENEFITS-------*/
