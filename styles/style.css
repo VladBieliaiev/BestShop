@@ -622,8 +622,6 @@ a {
 }
 
 /*---------second box -----------*/
-
-
 /*---------second box -----------*/
 
 /*----------PRICING-----------*/
@@ -635,3 +633,98 @@ a {
     margin: 165px auto;
     height: 800px;
 }
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox__wrapper {
+    max-width: 405px;
+}
+
+.contact__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 49px;
+    margin-right: 115px;
+    margin-bottom: 22px;
+}
+
+.contact__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 42px;
+}
+
+.contact__mail,
+.contact__phone {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--color-grey);
+    margin: 0 20px 210px 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label__name,
+.form__label__mail {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: var(--color-primary);
+}
+
+.form__label__name {
+    margin-bottom: 30px;
+}
+
+.form__label__mail {
+    margin: 30px 0;
+}
+
+.input__name,
+.input__mail {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    margin-bottom: 30px;
+}
+
+.checkbox__label {
+    display: flex;
+    font-size: 12px;
+    color: var(--color-grey);
+    line-height: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.custom__checkbox {
+    margin-right: 10px;
+}
+
+
+.custom__checkbox {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.checkbox__fake {
+    display: block;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.custom__checkbox:checked + .checkbox__fake {
+    background: url("../assets/Checkmark.svg") no-repeat;
+    background-position: center;
+}
+
