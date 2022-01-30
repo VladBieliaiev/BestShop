@@ -408,15 +408,20 @@ a {
 .block__two__img {
     width: 426px;
     height: 328px;
+
+    margin: 20px 0 13px 70px;
 }
 
 .block__three__content {
     background: var(--color-white);
-    box-sizing: content-box;
+    box-sizing: border-box;
     /*margin-right: 60px;*/
 
-    max-width: 554px;
+    max-width: 625px;
     padding: 70px 35px;
+    margin-right: 60px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
 
 }
 
@@ -428,6 +433,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+
 }
 
 .block__three__img {
@@ -445,3 +453,185 @@ a {
 
 
 /*-----SECTION BENEFITS-------*/
+
+/*----------PRICING-----------*/
+
+.pricing {
+    /*height: 800px;*/
+
+}
+
+.pricing__content{
+    display: flex;
+    justify-content: center;
+}
+.pricing__title {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+}
+
+.pricing__block__one,
+.pricing__block__two,
+.pricing__block__three {
+    box-sizing: border-box;
+    margin: 0;
+
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing__block__one {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing__block__two {
+    border: 1px solid var(--color-primary);
+}
+
+.pricing__block__three {
+    border: 1px solid var(--color-green);
+}
+
+.pricing__block__one__title,
+.pricing__block__two__title,
+.pricing__block__three__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 34px 160px 14px 160px;
+}
+
+.pricing__block__one__price,
+.pricing__block__two__price,
+.pricing__block__three__price {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    font-weight: lighter;
+
+    margin-bottom: 15px;
+}
+
+.prices__block__two__offer,
+.prices__block__three__offer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 50px;
+
+}
+
+.pricing__block__one__price {
+    margin-bottom: 70px;
+}
+
+.pricing__block__one__price {
+    color: var(--color-redish);
+}
+
+.pricing__block__two__price {
+    color:var(--color-primary);
+}
+
+.pricing__block__three__price {
+    color:var(--color-green);
+}
+
+.pricing__block__one__details__points,
+.pricing__block__two__details__points,
+.pricing__block__three__details__points {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing__block__one__details__points:last-child,
+.pricing__block__two__details__points:last-child,
+.pricing__block__three__details__points:last-child {
+    margin-bottom: 80px;
+}
+
+.pricing__block__one__details__points::before,
+.pricing__block__two__details__points::before,
+.pricing__block__three__details__points::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1-point.svg");
+}
+
+.not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing__block__one__but,
+.pricing__block__two__but,
+.pricing__block__three__but {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+}
+
+.pricing__block__one__but {
+    background: var(--color-redish);
+}
+
+.pricing__block__two__but {
+    background: var(--color-primary);
+}
+
+.pricing__block__three__but {
+    background: var(--color-green);
+}
+
+.but {
+    position: relative;
+    bottom: -25px;
+}
+
+.pricing__block__one__but {
+    bottom: -30px;
+}
+.pricing__block__two {
+    width: 400px;
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+/*---------second box -----------*/
+
+
+/*---------second box -----------*/
+
+/*----------PRICING-----------*/
+
+
+/*----------CONTACT-----------*/
+
+.contact {
+    margin: 165px auto;
+    height: 800px;
+}
