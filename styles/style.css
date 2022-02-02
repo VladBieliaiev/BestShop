@@ -44,11 +44,15 @@ a {
 .nav__link {
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
+    letter-spacing: 0.1875rem;
     color: var(--color-grey);
+    padding: 28px 18px 22px;
 }
 
 .nav__link:hover{
     color: var(--color-black);
+    border-bottom: 4px solid transparent;
+    border-color: var(--color-primary);
     /*border-bottom: 5px solid#00b3ff;*/
 }
 
@@ -249,61 +253,6 @@ a {
     padding-top: 100px;
 }
 
-/*.block__one {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    background: var(--color-white);*/
-/*    margin-bottom: 37px;*/
-/*}*/
-
-/*.block__one__img {*/
-/*    width: 387px;*/
-/*    height: 212px;*/
-/*}*/
-
-
-/*.block__one__content {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    width: 415px;*/
-/*    height: 118px;*/
-
-/*    margin: 91px 35px 120px;*/
-/*}*/
-
-/*.block__one__title {*/
-/*    font-family: 'Raleway', sans-serif;*/
-/*    font-weight: 400;*/
-/*    font-size: 36px;*/
-/*    color: var(--color-black);*/
-
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/*.block__one__text {*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-weight: 400;*/
-/*    line-height: 22px;*/
-/*}*/
-
-/*.block__one__text::after {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 300px;*/
-/*    height: 4px;*/
-/*    background: var(--color-redish);*/
-/*    margin-top: 30px;*/
-/*}*/
-
-/*.block__one__img__wrapper {*/
-/*    margin-right: 117px;*/
-/*    margin-top: 100px;*/
-
-/*}*/
-
-/*.block__one__img__square {*/
-
-/*}*/
 
 
 .benefits__container {
@@ -392,25 +341,59 @@ a {
     margin-top: 113px;
     padding-right: 118px;
     margin-bottom: 38px;
-    /*position: relative;*/
+    position: relative;
+}
 
+.block__one__img{
+    position: relative;
+    z-index: 2;
+}
+
+.block__one__img__wrapper::before{
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--color-redish);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    top: -40px;
+    transform: rotate(45deg);
+    right: 20%;
 }
 
 .block__one__img {
     display: block;
     width: 386px;
     height: 220px;
-    position: relative;
+    /*position: relative;*/
 }
 
 
+
+.block__two__img__wrapper {
+    position: relative;
+}
 
 .block__two__img {
     width: 426px;
     height: 328px;
 
     margin: 20px 0 13px 70px;
+    position: relative;
 }
+
+.block__two__img__wrapper::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: absolute;
+    right: 20%;
+}
+
+
 
 .block__three__content {
     background: var(--color-white);
@@ -435,6 +418,7 @@ a {
     align-items: center;
     border-radius: 5px;
     border: 1px solid #E8E9ED;
+
 
 }
 
@@ -629,9 +613,14 @@ a {
 
 /*----------CONTACT-----------*/
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact {
-    margin: 165px auto;
-    height: 800px;
+    margin: 165px auto 0;
+
 }
 
 .contact {
@@ -727,4 +716,63 @@ a {
     background: url("../assets/Checkmark.svg") no-repeat;
     background-position: center;
 }
+
+.checkbox__but {
+    width: 236px;
+    height: 57px;
+    border-radius: 35px;
+
+    border: none;
+    background: var(--color-primary);
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-white);
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+
+/*----------CONTACT-----------*/
+
+
+/*----------FOOTER-------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    color: var(--color-primary);
+    margin: 20px 0 8px 0;
+}
+
+.footer__copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: var(--color-grey);
+    margin-bottom: 20px;
+}
+
+.footer__rightSide {
+    display:flex;
+    align-items: center;
+}
+
+.twitter__img {
+    margin-right: 20px;
+}
+
+/*----------FOOTER-------------*/
 
